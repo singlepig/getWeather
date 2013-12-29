@@ -31,10 +31,11 @@ def getIpAddr():
     if __name__ == '__main__':
         print '外网IP：', ip
         print addr
-        for n in range(len(addrEn)):
-            addrEn[n] = addrEn[n].strip()
+    for n in range(len(addrEn)):
+        addrEn[n] = addrEn[n].strip()
+        if __name__ == '__main__':
             print addrEn[n], # 逗号是为了print后不换行
-        print # 输出addrEn后进行换行
+    print # 输出addrEn后进行换行
     return addrEn
 
 if __name__ == '__main__':
