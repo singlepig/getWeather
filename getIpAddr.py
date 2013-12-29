@@ -28,14 +28,15 @@ def getIpAddr():
     # 将包含位置信息的字符串用','再次分割，得到城市、省份
     addrEn = addrEn.split(',')
     # 去除字符串两边多余的空格
-    print '外网IP：', ip
-    print addr
-    for n in range(len(addrEn)):
-        addrEn[n] = addrEn[n].strip()
-        print addrEn[n], # 逗号是为了print后不换行
-    print
-    #print [ip, addr, addrEn]
+    if __name__ == '__main__':
+        print '外网IP：', ip
+        print addr
+        for n in range(len(addrEn)):
+            addrEn[n] = addrEn[n].strip()
+            print addrEn[n], # 逗号是为了print后不换行
+        print # 输出addrEn后进行换行
+    return addrEn
 
 if __name__ == '__main__':
-    getIpAddr()
+    print getIpAddr()
 
