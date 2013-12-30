@@ -39,5 +39,5 @@ def getIpAddr():
     return addrEn
 
 if __name__ == '__main__':
-    print getIpAddr()
+    getIpAddr()
 
